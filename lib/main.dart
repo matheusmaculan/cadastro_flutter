@@ -1,4 +1,26 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Text('Bem vindo ao cadastro de Clientes!',textDirection: TextDirection.ltr));
-    // runAPP é basicamente o que irá rodar
+void main() => runApp(
+      Column(
+        children: <Widget>[
+          const Text(
+            'Deliver features faster',
+            textDirection: TextDirection.rtl,
+          ),
+          const Text(
+            'Craft beautiful UIs',
+            textDirection: TextDirection.rtl,
+          ),
+          const Text(
+            'Craft beautiful UIs',
+            textDirection: TextDirection.rtl,
+          ),
+          Column(children: const <Widget>[
+            Text(
+              'Craft beautiful UIs',
+              textDirection: TextDirection.rtl,
+            ),
+          ])
+        ],
+      ),
+    );
