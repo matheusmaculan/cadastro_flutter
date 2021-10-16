@@ -1,26 +1,16 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(
-      Column(
-        children: <Widget>[
-          const Text(
-            'Deliver features faster',
-            textDirection: TextDirection.rtl,
+      MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Center(child: Text('Cadastro de Clientes', textAlign: TextAlign.center)),
           ),
-          const Text(
-            'Craft beautiful UIs',
-            textDirection: TextDirection.rtl,
-          ),
-          const Text(
-            'Craft beautiful UIs',
-            textDirection: TextDirection.rtl,
-          ),
-          Column(children: const <Widget>[
-            Text(
-              'Craft beautiful UIs',
-              textDirection: TextDirection.rtl,
-            ),
-          ])
-        ],
+        floatingActionButton: FloatingActionButton(
+        onPressed: () {  },
+        child: Icon(Icons.add),
+        ),
       ),
-    );
+    )
+);
