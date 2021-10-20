@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'itemTransferencia.dart';
 
-class Transferencias extends StatelessWidget { // criei uma classe e peguei por herança uma classe pra poder usar acima no BODY
+class ListaTransferencias extends StatelessWidget { // criei uma classe e peguei por herança uma classe pra poder usar acima no BODY
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

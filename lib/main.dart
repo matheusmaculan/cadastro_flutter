@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'transferencias.dart';
+import 'ListaTransferencias.dart';
 
 void main() => runApp(
       MaterialApp(
         home: Scaffold(
-          body: Transferencias(),
+          body: ListaTransferencias(),
           appBar: AppBar(
             title: const Center(child: Text('Transferências', textAlign: TextAlign.center)),
           ),
