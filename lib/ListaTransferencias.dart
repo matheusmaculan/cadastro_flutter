@@ -1,3 +1,4 @@
+import 'package:cadastro_flutter/Transferencia.dart';
 import 'package:flutter/cupertino.dart';
 import 'itemTransferencia.dart';
 
@@ -7,9 +8,9 @@ class ListaTransferencias extends StatelessWidget { // criei uma classe e peguei
     // TODO: implement build
     return Column(
         children: <Widget>[
-          ItemTransferencia('100.00', '3838'),
-          ItemTransferencia('250.00', '541'),
-          ItemTransferencia('400.00', '123'),
+          ItemTransferencia(Transferencia(100.0,6512)),
+          ItemTransferencia(Transferencia(250.0,42337)),
+          ItemTransferencia(Transferencia(300.0,3838)),
         ]
     );
   }
