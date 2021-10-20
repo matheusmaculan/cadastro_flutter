@@ -1,20 +1,8 @@
+
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'ListaTransferencias.dart';
+import 'ByteBankApp.dart';
 
-void main() => runApp(
-      MaterialApp(
-        home: Scaffold(
-          body: ListaTransferencias(),
-          appBar: AppBar(
-            title: const Center(child: Text('Transferências', textAlign: TextAlign.center)),
-          ),
-        floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
-        child: const Icon(Icons.add),
-        ),
-      ),
-    )
-);
+void main() => runApp(ByteBankApp());
 
 
+// Hot Reload, a cada interação já é feito um refresh, sem precisar dar um restart na aplicação
