@@ -19,5 +19,4 @@ class ItemTransferencia extends StatelessWidget{
         )
     );
   }
-
 }
