@@ -1,6 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
-import 'ByteBankApp.dart';
+import 'bytebankapp.dart';
 
 void main() => runApp(ByteBankApp());
 
