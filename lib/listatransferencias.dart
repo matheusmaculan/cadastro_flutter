@@ -1,8 +1,8 @@
-import 'package:cadastro_flutter/transferencia.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'FormularioTransferencia.dart';
+import 'Formulariotransferencia.dart';
 import 'itemtransferencia.dart';
+import 'transferencia.dart';
 
 class ListaTransferencias extends StatefulWidget {
 
@@ -18,9 +18,9 @@ class ListaTransferencias extends StatefulWidget {
 class ListaTransferenciasState extends State<ListaTransferencias> {
 
   get transferenciaRecebida => null;
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('Transferências', textAlign: TextAlign.center)),
@@ -38,9 +38,13 @@ class ListaTransferenciasState extends State<ListaTransferencias> {
             return FormularioTransferencia();
           }));
           future.then((transferenciaRecebida){
-            debugPrint('chegou no then do future');
-            debugPrint('$transferenciaRecebida');
-            widget._transferencias.add(transferenciaRecebida);
+            Future.delayed(const Duration(seconds: 1), () {
+            if(transferenciaRecebida != null) {
+              setState(() {
+                widget._transferencias.add(transferenciaRecebida);
+              });
+            }
+          });
           });
         },
         child: const Icon(Icons.add),
